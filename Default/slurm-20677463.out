@@ -1,0 +1,21 @@
+/var/spool/slurmd/job20677463/slurm_script: line 10: cd: /users/PCS0268/iroebke/cs4170_fa2022_r03_roebke/Default/Default: No such file or directory
+Building file: ../src/CStopWatch.cpp
+Invoking: GCC C++ Compiler
+g++ -I../src -O2 -g -Wall -c -fmessage-length=0   -fopenmp   -MMD -MP -MF"src/CStopWatch.d" -MT"src/CStopWatch.d" -o "src/CStopWatch.o" "../src/CStopWatch.cpp"
+Finished building: ../src/CStopWatch.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I../src -O2 -g -Wall -c -fmessage-length=0   -fopenmp   -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void printVector(std::vector<int>)’:
+../src/main.cpp:49:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for(int i=0; i < myList.size(); i++){
+                  ~~^~~~~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: OpenMP
+Invoking: GCC C++ Linker
+g++ -o "OpenMP" -fopenmp   ./src/CStopWatch.o  ./src/main.o  
+Finished building target: OpenMP
+ 
+slurmstepd: error: *** JOB 20677463 ON o0588 CANCELLED AT 2022-09-21T07:53:48 ***
