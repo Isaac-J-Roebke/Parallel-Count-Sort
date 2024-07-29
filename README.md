@@ -8,9 +8,6 @@ cd Default && make all
 In this project I used OpenMP a open source library for parallel computing.
 I used omp for scheduling for the first time, and instead of only using omp for loops I created a thread pool and used omp for to direct when the threads should fork.
 
-## Problems
-This project currently has an issue with runtime. The latest run had a problem size of 100,000 and it took about an hour to complete on OSC's Owens cluster. However the data is accurate and shows roughly 10x speed up at most, and I am happy with my results.
-
 ## Analysis
 In my spreadsheet titled "R03_results.xlsx" there are 3 tables containing the average speedup, average efficiency, and average Karp-Flatt metric.
 
