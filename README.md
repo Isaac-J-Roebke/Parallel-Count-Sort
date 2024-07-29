@@ -1,4 +1,4 @@
-# Reflection 3 Isaac Roebke
+# Parallel Count Sort in Parallel
 
 ## To run
 cd Default && make all
